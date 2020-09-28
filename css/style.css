@@ -1,0 +1,564 @@
+body{
+margin: 0;
+padding: 0;
+background: rgb(19, 22, 45);
+}
+
+
+.seat:hover{
+background: #fff;
+}
+
+
+/* Phones */
+@media (max-width: 690px) {
+  .container{
+  margin-top: 15%;
+  margin-right: 22%;
+  }
+
+  /* Pick Movie */
+  #pickMovie{
+  padding-left: 8%;
+  }
+
+  /* Select */
+  #pickMovie form{
+  width: 50%;
+  }
+
+
+
+  /* Black Div with seats status */
+  #seatsStatus{
+    background: rgb(3, 3, 3);
+    padding: 13px;
+    margin-left: 3%;
+    color: rgb(91, 91, 91);
+  }
+
+
+  /* Seats Status */
+  #vacant{
+  display: inline-block;
+  width: 20px;
+  height: 17px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  background: rgb(37, 37, 37);
+  }
+
+  #selected{
+  display: inline-block;
+  width: 20px;
+  height: 17px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  background: rgb(0, 255, 240);
+  }
+
+  #occupied{
+    display: inline-block;
+    width: 20px;
+    height: 17px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    background: #fff;
+  }
+
+  .seatsType{
+    color: #fff;;
+    font-size: 0.9rem;
+  }
+
+/* White Movie Screen */
+  #screen{
+      transform: rotate(180deg);
+      border-bottom: 100px solid #fff;
+    	border-left: 10px solid transparent;
+    	border-right: 10px solid transparent;
+      padding: 10px;
+      color: rgb(91, 91, 91);
+      margin-top: 8%;
+      margin-left: 4%;
+  }
+
+  /* Seats Section */
+  #seats{
+    padding: 13px;
+    color: rgb(91, 91, 91);
+    margin-left: 17%;
+  }
+
+  .seat{
+    display: inline-block;
+    width: 20px;
+    height: 17px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    background: rgb(37, 37, 37);
+    cursor: pointer;
+  }
+
+
+  /* JS Seats */
+  .occupiedSeat{
+    display: inline-block;
+    width: 20px;
+    height: 17px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    background: #fff;
+  }
+
+  .selectedSeat{
+    display: inline-block;
+    width: 20px;
+    height: 17px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    background: rgb(0, 255, 240);
+    cursor: pointer;
+  }
+
+
+  /* Final Choice */
+  #selectInfo{
+    padding: 13px;
+    margin-left: 5%;
+  }
+
+  .choice{
+  color: rgb(0, 255, 240);
+  font-weight: bold;
+  }
+}
+
+
+/* Ipad */
+@media (min-width: 700px) {
+  .container{
+  margin-top: 17%;
+  margin-right: 22%;
+  }
+
+  /* Pick Movie */
+  #pickMovie{
+  padding-left: 18%;
+  font-size: 2rem;
+  }
+
+  /* Select */
+  #pickMovie form{
+  width: 50%;
+  }
+
+  #pickMovie p{
+  font-size: 1.7rem;
+  }
+
+  #select{
+  height: 50px;
+  font-size: 1.5rem;
+  }
+
+
+  /* Black Div with seats status */
+  #seatsStatus{
+    background: rgb(3, 3, 3);
+    padding: 13px;
+    margin-left: 5%;
+    color: rgb(91, 91, 91);
+  }
+
+
+  /* Seats Status */
+  #vacant{
+  display: inline-block;
+  width: 29px;
+  height: 25px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  background: rgb(37, 37, 37);
+  }
+
+  #selected{
+  display: inline-block;
+  width: 29px;
+  height: 25px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  background: rgb(0, 255, 240);
+  }
+
+  #occupied{
+    display: inline-block;
+    width: 29px;
+    height: 25px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    background: #fff;
+  }
+
+  .seatsType{
+    color: #fff;;
+    font-size: 1.5rem;
+  }
+
+/* White Movie Screen */
+  #screen{
+      transform: rotate(180deg);
+      border-bottom: 100px solid #fff;
+    	border-left: 10px solid transparent;
+    	border-right: 10px solid transparent;
+      padding: 10px;
+      color: rgb(91, 91, 91);
+      margin-top: 5%;
+      margin-left: 13%;
+      width: 80%;
+  }
+
+  /* Seats Section */
+  #seats{
+    padding: 13px;
+    color: rgb(91, 91, 91);
+    margin-left: 30%;
+  }
+
+  .seat{
+    display: inline-block;
+    width: 29px;
+    height: 25px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    background: rgb(37, 37, 37);
+    cursor: pointer;
+  }
+
+
+
+
+  /* JS Seats */
+  .occupiedSeat{
+    display: inline-block;
+    width: 29px;
+    height: 25px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    background: #fff;
+  }
+
+  .selectedSeat{
+    display: inline-block;
+    width: 29px;
+    height: 25px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    background: rgb(0, 255, 240);
+    cursor: pointer;
+  }
+
+  /* Final Choice */
+  #selectInfo{
+    padding: 13px;
+    margin-left: 5%;
+    font-size: 2rem;
+  }
+
+  .choice{
+  color: rgb(0, 255, 240);
+  font-weight: bold;;
+  }
+
+  .finalAbzac{
+    font-size: 1.7rem;
+  }
+}
+
+
+
+/* Ipad Pro */
+@media (min-width: 1000px) {
+  .container{
+  margin-top: 17%;
+  margin-right: 22%;
+  }
+
+  /* Pick Movie */
+  #pickMovie{
+  padding-left: 18%;
+  }
+
+  #pickMovie p{
+  font-size: 3rem;
+  }
+
+  /* Select */
+  #pickMovie form{
+  width: 50%;
+  }
+
+  #select{
+  height: 80px;
+  font-size: 2rem;
+  }
+
+
+
+
+
+  /* Black Div with seats status */
+  #seatsStatus{
+    background: rgb(3, 3, 3);
+    padding: 13px;
+    margin-left: 7%;
+    color: rgb(91, 91, 91);
+  }
+
+
+  /* Seats Status */
+  #vacant{
+  display: inline-block;
+  width: 45px;
+  height: 40px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  background: rgb(37, 37, 37);
+  margin-top: 1%;
+  }
+
+  #selected{
+  display: inline-block;
+  width: 45px;
+  height: 40px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  background: rgb(0, 255, 240);
+  margin-top: 1%;
+  }
+
+  #occupied{
+    display: inline-block;
+    width: 45px;
+    height: 40px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    background: #fff;
+    margin-top: 1%;
+  }
+
+  .seatsType{
+    color: #fff;;
+    font-size: 2.5rem;
+  }
+
+/* White Movie Screen */
+  #screen{
+      transform: rotate(180deg);
+      border-bottom: 100px solid #fff;
+    	border-left: 10px solid transparent;
+    	border-right: 10px solid transparent;
+      padding: 10px;
+      color: rgb(91, 91, 91);
+      margin-top: 5%;
+      margin-left: 13%;
+      width: 80%;
+  }
+
+  /* Seats Section */
+  #seats{
+    padding: 13px;
+    color: rgb(91, 91, 91);
+    margin-left: 30%;
+  }
+
+  .seat{
+    display: inline-block;
+    width: 45px;
+    height: 40px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    background: rgb(37, 37, 37);
+    cursor: pointer;
+    margin-top: 7px;
+  }
+
+
+  /* JS Seats */
+  .occupiedSeat{
+    display: inline-block;
+    width: 45px;
+    height: 40px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    background: #fff;
+    margin-top: 7px;
+  }
+
+  .selectedSeat{
+    display: inline-block;
+    width: 45px;
+    height: 40px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    background: rgb(0, 255, 240);
+    cursor: pointer;
+    margin-top: 7px;
+  }
+
+  /* Final Choice */
+  #selectInfo{
+    padding: 13px;
+    margin-left: 5%;
+  }
+
+  .choice{
+  color: rgb(0, 255, 240);
+  font-weight: bold;;
+  }
+
+  .finalAbzac{
+    font-size: 3rem;
+  }
+}
+
+
+/* PC */
+@media (min-width: 1200px) {
+  .container{
+  margin-top: 10%;
+  margin-right: 26%;
+  }
+
+  /* Pick Movie */
+  #pickMovie{
+  padding-left: 18%;
+  }
+
+  #pickMovie p{
+  font-size: 2rem;
+  }
+
+  /* Select */
+  #pickMovie form{
+  width: 50%;
+  }
+
+  #select{
+  height: 50px;
+  font-size: 1.5rem;
+  }
+
+
+
+  /* Black Div with seats status */
+  #seatsStatus{
+    background: rgb(3, 3, 3);
+    padding: 13px;
+    margin-left: 7%;
+    color: rgb(91, 91, 91);
+  }
+
+
+  /* Seats Status */
+  #vacant{
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  background: rgb(37, 37, 37);
+  }
+
+  #selected{
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  background: rgb(0, 255, 240);
+  }
+
+  #occupied{
+    display: inline-block;
+    width: 35px;
+    height: 30px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    background: #fff;
+  }
+
+  .seatsType{
+    color: #fff;;
+    font-size: 2rem;
+  }
+
+/* White Movie Screen */
+  #screen{
+      transform: rotate(180deg);
+      border-bottom: 100px solid #fff;
+    	border-left: 10px solid transparent;
+    	border-right: 10px solid transparent;
+      padding: 10px;
+      color: rgb(91, 91, 91);
+      margin-top: 5%;
+      margin-left: 24%;
+      width: 50%;
+  }
+
+  /* Seats Section */
+  #seats{
+    padding: 13px;
+    color: rgb(91, 91, 91);
+    margin-left: 33%;
+  }
+
+  .seat{
+    display: inline-block;
+    width: 35px;
+    height: 30px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    background: rgb(37, 37, 37);
+    cursor: pointer;
+    margin-top: 7px;
+  }
+
+
+  /* JS Seats */
+  .occupiedSeat{
+    display: inline-block;
+    width: 35px;
+    height: 30px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    background: #fff;
+    margin-top: 7px;
+  }
+
+  .selectedSeat{
+    display: inline-block;
+    width: 35px;
+    height: 30px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    background: rgb(0, 255, 240);
+    cursor: pointer;
+    margin-top: 7px;
+  }
+
+  /* Final Choice */
+  #selectInfo{
+    padding: 13px;
+    margin-left: 5%;
+  }
+
+  .choice{
+  color: rgb(0, 255, 240);
+  font-weight: bold;;
+  }
+
+  .finalAbzac{
+    font-size: 2.5rem;
+  }
+}

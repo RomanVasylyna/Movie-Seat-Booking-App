@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://use.fontawesome.com/2973103c3a.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=KaushanScript">
+</head>
+<body>
+
+<div class="container text-center">
+<!-- Main Part -->
+<div id="pickMovie">
+<div class="d-flex flex-row">
+  <p class="lead text-white pr-3">Pick a Movie : </p>
+  <form>
+    <select class="form-control" id="select">
+    <option value="12">Joker ($12)</option>
+    <option value="10">Avengers : Endgame ($10)</option>
+    <option value="8">Toy Story 4 ($8)</option>
+    <option value="9">The Lion King ($9)</option>
+    </select>
+  </form>
+</div>
+</div>
+
+<!-- Seats Status -->
+<div id="seatsStatus" class="text-white mt-3">
+<div class="d-flex flex-row justify-content-center">
+<span id="vacant" class="mr-1"></span><small class="pr-4 seatsType">Vacant</small>
+<span id="selected" class="mr-1"></span><small class="pr-4 seatsType">Selected</small>
+<span id="occupied" class="mr-1"></span><small class="seatsType">Occupied</small>
+</div>
+</div>
+
+<!-- Screen -->
+<div id="screen">
+
+</div>
+
+<!-- Seats -->
+<div id="seats">
+
+</div>
+
+<!-- You have selected -->
+<div id="selectInfo" class="text-white">
+<p class="lead finalAbzac">You have selected <span class="choice seatsChoice">0</span> seats for a price of <span class="choice">$</span><span class="choice totalPrice">0</span></p>
+</div>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.6/lib/draggable.js"></script>
+</body>
+</html>
